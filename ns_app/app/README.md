@@ -1,25 +1,36 @@
-# NativeScript Angular 2 Template
+# Stepper Motor Project (Mac)
+### Prerequisites
+* Install Node LTS
+  * `brew install nvm`
+  * `nvm install 6`
+  * `nvm use 6`
+* Install Android and/or iOS SDK's using nativescript install script
+  * `ruby -e "$(curl -fsSL https://www.nativescript.org/setup/mac)"`
+* Install Android Studio and/or Xcode
+* Open & accept licenses for Android Studio/Xcode
+* Xcode/iOS development needs an apple developer account with provisioning profiles downloaded locally and set up in Xcode
+* Install NativeScript globally
+  * `npm install -g nativescript`
+  * make sure `tns doctor` says `No issues were detected.`
 
-This template creates a "Hello, world" NativeScript app using TypeScript and Angular 2.
+### Clone the repository
+* `git clone https://github.com/ejsuncy/steppermotor.git`
+* `cd steppermotor`
 
-You can create a new app that uses this template with either the `--template` option.
 
-```
-tns create my-app-name --template tns-template-hello-world-ng
-```
+### NativeScript app setup
+* Use the ns app directory as the working directory
+  * `cd ns_app`
+* Add iOS and/or Android platforms
+  * `tns platform add ios`
+  * `tns platform add android`
 
-Or the `--ng` shorthand.
+### NativeScript app usage
+* Run the app on the emulator
+  * `tns run ios --emulator`
+* Or run the app on the only connected device (or emulator if none connected)
+  * `tns run ios`
+* Or specify which device to run it on
+  * `tns run ios --device 1`
 
-```
-tns create my-app-name --ng
-```
 
-> Note: Both commands will create a new NativeScript app that uses the latest version of this template published to [npm] (https://www.npmjs.com/package/tns-template-hello-world-ts).
-
-If you want to create a new app that uses the source of the template from the `master` branch, you can execute the following:
-
-```
-tns create my-app-name --template https://github.com/NativeScript/template-hello-world-ng.git#master
-```
-
-**NB:** Please, have in mind that the master branch may refer to dependencies that are not on NPM yet!

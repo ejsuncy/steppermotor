@@ -9,18 +9,18 @@ import { ItemDetailComponent } from "./item/item-detail.component";
 
 @NgModule({
     bootstrap: [
-        AppComponent
+        AppComponent // the entry point for our app
     ],
-    imports: [
+    imports: [ // this is where all the external @NgModules are brought in to our app for use
         NativeScriptModule,
         AppRoutingModule
     ],
-    declarations: [
+    declarations: [ // this is where all declarables that we will use in our app go (components, directives, pipes)
         AppComponent,
         ItemsComponent,
         ItemDetailComponent
     ],
-    providers: [
+    providers: [ // provides application-level services that any component in our app can use
         ItemService
     ],
     schemas: [
