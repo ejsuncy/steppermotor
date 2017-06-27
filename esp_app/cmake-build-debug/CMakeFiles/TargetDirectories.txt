@@ -1,0 +1,11 @@
+/Users/ejsuncy/dev/steppermotor/esp_app/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/ejsuncy/dev/steppermotor/esp_app/cmake-build-debug/CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir
+/Users/ejsuncy/dev/steppermotor/esp_app/cmake-build-debug/CMakeFiles/esp_app.dir
+/Users/ejsuncy/dev/steppermotor/esp_app/cmake-build-debug/CMakeFiles/PLATFORMIO_UPDATE_ALL.dir
+/Users/ejsuncy/dev/steppermotor/esp_app/cmake-build-debug/CMakeFiles/PLATFORMIO_UPLOADFS.dir
+/Users/ejsuncy/dev/steppermotor/esp_app/cmake-build-debug/CMakeFiles/PLATFORMIO_BUILD.dir
+/Users/ejsuncy/dev/steppermotor/esp_app/cmake-build-debug/CMakeFiles/PLATFORMIO_PROGRAM.dir
+/Users/ejsuncy/dev/steppermotor/esp_app/cmake-build-debug/CMakeFiles/PLATFORMIO_TEST.dir
+/Users/ejsuncy/dev/steppermotor/esp_app/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ejsuncy/dev/steppermotor/esp_app/cmake-build-debug/CMakeFiles/PLATFORMIO_CLEAN.dir
+/Users/ejsuncy/dev/steppermotor/esp_app/cmake-build-debug/CMakeFiles/PLATFORMIO_UPLOAD.dir
