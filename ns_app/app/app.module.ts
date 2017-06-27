@@ -1,6 +1,5 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
-import { AppRoutingModule } from "./app.routing";
 import { AppComponent } from "./app.component";
 
 @NgModule({
@@ -8,8 +7,7 @@ import { AppComponent } from "./app.component";
         AppComponent // the entry point for our app
     ],
     imports: [ // this is where all the external @NgModules are brought in to our app for use
-        NativeScriptModule,
-        AppRoutingModule
+        NativeScriptModule
     ],
     declarations: [ // this is where all declarables that we will use in our app go (components, directives, pipes)
         AppComponent

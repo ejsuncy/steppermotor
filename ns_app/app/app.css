@@ -10,3 +10,41 @@ of writing your own CSS rules. For a full list of class names in the theme
 refer to http://docs.nativescript.org/ui/theme.
 */
 @import 'nativescript-theme-core/css/core.light.css';
+
+StackLayout {
+    background-color: #091541;
+}
+
+StackLayout > Label {
+    font-family: "HelveticaNeue", "Didot-Italic", Helvetica, Arial, sans-serif;
+    color: #DBDFE0;
+    font-size: 35;
+    horizontal-align: center;
+}
+
+StackLayout Button {
+    color: #DBDFE0;
+    font-family: "HelveticaNeue", "Didot-Italic", Helvetica, Arial, sans-serif;
+}
+
+Button[isEnabled='false'] {
+    color: #1B5990;
+}
+
+ListView {
+    background-color: #1B5990;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-family: "Didot-Italic";
+    font-size: 30pt;
+    color: #DBDFE0;
+    height: 81%;
+}
+
+ListView Label {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

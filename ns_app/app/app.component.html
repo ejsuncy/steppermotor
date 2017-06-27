@@ -1,1 +1,13 @@
-<page-router-outlet></page-router-outlet>
+<ActionBar title="Test App" class="action-bar"></ActionBar>
+<StackLayout>
+    <Label text="Hello World!"></Label>
+    <StackLayout orientation="horizontal" horizontalAlignment="center">
+        <Button horizontalAlignment="center" text="Connect..." [isEnabled]="!(connected | async)" (tap)="connect()" style="horizontal-align: center;"></Button>
+        <Label width="10"></Label>
+        <ActivityIndicator horizontalAlignment="right" [busy]="loading | async" width="20" height="20" [visibility]="(loading|async) ? 'visible' : 'collapse'" color="#fff"></ActivityIndicator>
+    </StackLayout>
+    <Button text="Add Message" (tap)="addMessage()" style="horizontal-align: center;"></Button>
+    <ListView [items]="messages | async">
+        <Label #label *ngFor="let message of items" [text]="message" (tap)="addMessage()"></Label>
+    </ListView>
+</StackLayout>
