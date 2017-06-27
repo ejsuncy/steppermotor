@@ -247,7 +247,7 @@ var Page = (function (_super) {
     }
     Page.prototype.requestLayout = function () {
         _super.prototype.requestLayout.call(this);
-        if (!this.parent && this.ios && this.nativeView) {
+        if ((!this.parent || this._modalParent) && this.ios && this.nativeView) {
             this.nativeView.setNeedsLayout();
         }
     };

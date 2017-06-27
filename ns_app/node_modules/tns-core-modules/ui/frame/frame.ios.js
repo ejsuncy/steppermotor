@@ -152,6 +152,9 @@ var Frame = (function (_super) {
     Frame.prototype._updateActionBar = function (page, disableNavBarAnimation) {
         if (disableNavBarAnimation === void 0) { disableNavBarAnimation = false; }
         _super.prototype._updateActionBar.call(this, page);
+        if (page && this.currentPage && this.currentPage.modal === page) {
+            return;
+        }
         page = page || this.currentPage;
         var newValue = this._getNavBarVisible(page);
         var disableNavBarAnimationCache = this._ios._disableNavBarAnimation;

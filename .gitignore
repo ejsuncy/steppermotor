@@ -1,0 +1,12 @@
+.DS_Store
+.idea
+esp_app/.pioenvs
+esp_app/.piolibdeps
+esp_app/CMakeListsPrivate.txt
+esp_app/CMakeLists.txt
+esp_app/cmake-build-debug
+ns_app/.idea
+ns_app/node_modules
+ns_app/platforms
+ns_app/references.d.ts
+

@@ -102,6 +102,9 @@ function updateItemTitlePosition(tabBarItem) {
         tabBarItem.titlePositionAdjustment = { horizontal: 0, vertical: -20 };
     }
 }
+function updateItemIconPosition(tabBarItem) {
+    tabBarItem.imageInsets = new UIEdgeInsets({ top: 6, left: 0, bottom: -6, right: 0 });
+}
 var TabViewItem = (function (_super) {
     __extends(TabViewItem, _super);
     function TabViewItem() {
@@ -126,6 +129,9 @@ var TabViewItem = (function (_super) {
             var tabBarItem = UITabBarItem.alloc().initWithTitleImageTag(title, icon, index_1);
             if (!icon) {
                 updateItemTitlePosition(tabBarItem);
+            }
+            else if (!title) {
+                updateItemIconPosition(tabBarItem);
             }
             var states = getTitleAttributesForStates(parent);
             applyStatesToItem(tabBarItem, states);
@@ -230,6 +236,9 @@ var TabView = (function (_super) {
             var tabBarItem = UITabBarItem.alloc().initWithTitleImageTag((item.title || ""), icon, i);
             if (!icon) {
                 updateItemTitlePosition(tabBarItem);
+            }
+            else if (!item.title) {
+                updateItemIconPosition(tabBarItem);
             }
             applyStatesToItem(tabBarItem, states);
             newController.tabBarItem = tabBarItem;
