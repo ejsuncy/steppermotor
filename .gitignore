@@ -11,3 +11,4 @@ ns_app/platforms
 ns_app/references.d.ts
 
 esp_app/.travis.yml
+ns_app/**/*.js
