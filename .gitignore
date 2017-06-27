@@ -1,5 +1,6 @@
 **/.DS_Store
 **/.idea
+esp_app/.gitignore
 esp_app/.pioenvs
 esp_app/.piolibdeps
 esp_app/CMakeListsPrivate.txt
